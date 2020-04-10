@@ -7,8 +7,11 @@ import webbrowser
 import spd
 import time
 
-os.system("clear")
-os.system("cls")
+osxt = sys.platform
+if 'win' in osxt:
+    os.system("cls")
+if 'linux' in osxt:
+    os.system("clear")
 
 print('               _ _              _     ')
 print(' ___ _ __   __| | |_ ___   ___ | |___ ')
